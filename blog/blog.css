@@ -1,0 +1,92 @@
+h1{
+	COLOR: #4682B4;
+	text-align: center;
+	font-weight: normal;
+	font-family:"Papyrus", fantasy; 
+}
+h2.date{
+	color: #4682B4;
+	text-align: left;
+}
+li{
+	color: #4682B4;
+}
+p.ingredients{
+	Color: black;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Comic Sans MS", sans-serif;
+	border-top: thin ridge black;
+	border-bottom: thin ridge black;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+p.multipleIngredients{
+	Color: black;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Comic Sans MS", sans-serif;
+	border-bottom: thin ridge black;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+img.mePic{
+	margin-left: auto;
+	margin-right: auto;
+	width: 28%;
+	border: thin groove black;
+	background: #2E8B57;
+	padding: 20px;
+}
+img.dinner6-11-13{
+
+}
+img.dessert7-2-13{
+}
+img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	border: 3px #778899;
+	border-style: ridge groove;
+	border-radius: 15px;
+	padding: 10px;
+	background: #DAA520;
+}
+body{
+	background-color: #FFDEAD;
+	COLOR: #2E8B57;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 2px outset #4682B4;
+	padding: 10px 10px 10px 10px;
+	font-family: "calibri", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.35em;
+}
+p.welcomeMessage{
+	font-size: 135%; 
+	font-family: "book antiqua", serif;
+	color: black;
+	font-style: italic;
+	background-color: #A7cece;
+	padding: 15px;
+	margin-right: 50px;
+	margin-left: 50px;
+	border-style: ridge;
+	border-width: thin;
+	border-color: black;
+}
+p.homeLink{
+	text-align: right;
+}
+a,a:visited{
+	color: #4682B4;	
+}
+a.recipeLink:hover, a.homeLink:hover{
+	background: #98FB98;
+	color: #006400;
+}
