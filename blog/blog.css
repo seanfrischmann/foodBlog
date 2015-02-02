@@ -8,6 +8,14 @@ h2.date{
 	color: #4682B4;
 	text-align: left;
 }
+h3{
+	color: black;
+}
+#wrapper{
+	text-align: left;
+	margin: 0 auto;
+	width: 600px;
+}
 li{
 	Color: #4682B4;
 }
@@ -22,13 +30,12 @@ p.ingredients{
 	margin-right: 20%;
 	margin-left: 20%;
 }
-p.multipleIngredients{
+p.review{
 	Color: black;
 	text-align: center;
 	font-size: 16px;
 	font-weight: normal;
 	font-family: "Comic Sans MS", sans-serif;
-	border-bottom: thin ridge black;
 	margin-right: 20%;
 	margin-left: 20%;
 }
@@ -37,8 +44,8 @@ img.mePic{
 	margin-right: auto;
 	width: 28%;
 	border: thin groove black;
-	background: #2E8B57;
-	padding: 20px;
+	//background: #2E8B57;
+	//padding: 20px;
 }
 img.dinner6-11-13{
 
@@ -52,14 +59,15 @@ img{
 	border: 3px #778899;
 	border-style: ridge groove;
 	border-radius: 15px;
-	padding: 10px;
-	background: #DAA520;
+	padding: 0px;
+	//background: #DAA520;
 }
 body{
 	background-image: url("images/textured_paper.png");
 	COLOR: #2E8B57;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 10%;
+	margin-right: 10%;
+	//margin: 0 auto;
 	border: 2px outset #4682B4;
 	padding: 10px 10px 10px 10px;
 	font-family: "calibri", sans-serif;
