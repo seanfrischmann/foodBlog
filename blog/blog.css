@@ -44,8 +44,8 @@ img.mePic{
 	margin-right: auto;
 	width: 28%;
 	border: thin groove black;
-	//background: #2E8B57;
-	//padding: 20px;
+	background-image: url("images/wood_1.png");
+	padding: 20px;
 }
 img.dinner6-11-13{
 
