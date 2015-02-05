@@ -8,19 +8,13 @@ h2.date{
 	color: #4682B4;
 	text-align: left;
 }
-h3{
-	color: black;
-}
 #wrapper{
 	text-align: left;
 	margin: 0 auto;
 	width: 600px;
 }
-li{
-	Color: #4682B4;
-}
+
 p.ingredients{
-	Color: black;
 	text-align: center;
 	font-size: 16px;
 	font-weight: normal;
@@ -31,7 +25,6 @@ p.ingredients{
 	margin-left: 20%;
 }
 p.review{
-	Color: black;
 	text-align: center;
 	font-size: 16px;
 	font-weight: normal;
@@ -44,13 +37,8 @@ img.mePic{
 	margin-right: auto;
 	width: 28%;
 	border: thin groove black;
-	background-image: url("images/wood_1.png");
-	padding: 20px;
-}
-img.dinner6-11-13{
-
-}
-img.dessert7-2-13{
+	background-color: black;
+	padding: 5px;
 }
 img{
 	margin-left: auto;
@@ -60,14 +48,12 @@ img{
 	border-style: ridge groove;
 	border-radius: 15px;
 	padding: 0px;
-	//background: #DAA520;
 }
 body{
 	background-image: url("images/textured_paper.png");
-	COLOR: #2E8B57;
+	COLOR: black;
 	margin-left: 10%;
 	margin-right: 10%;
-	//margin: 0 auto;
 	border: 2px outset #4682B4;
 	padding: 10px 10px 10px 10px;
 	font-family: "calibri", sans-serif;
@@ -79,7 +65,7 @@ p.welcomeMessage{
 	font-size: 135%; 
 	font-family: "book antiqua", serif;
 	color: black;
-	font-style: italic;
+	font-style: italic, bold;
 	background-color: #A7cece;
 	padding: 15px;
 	margin-right: 50px;
@@ -92,9 +78,8 @@ p.homeLink{
 	text-align: right;
 }
 a,a:visited{
-	color: #4682B4;	
+	color: black;
 }
 a.recipeLink:hover, a.homeLink:hover{
 	background: #98FB98;
-	color: #006400;
 }
