@@ -1,1 +1,0 @@
-/opt/python3/lib/python3.4/functools.py

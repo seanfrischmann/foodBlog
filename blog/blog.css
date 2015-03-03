@@ -1,0 +1,85 @@
+h1{
+	COLOR: #4682B4;
+	text-align: center;
+	font-weight: normal;
+	font-family:"Papyrus", fantasy; 
+}
+h2.date{
+	color: #4682B4;
+	text-align: left;
+}
+#wrapper{
+	text-align: left;
+	margin: 0 auto;
+	width: 600px;
+}
+
+p.ingredients{
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Comic Sans MS", sans-serif;
+	border-top: thin ridge black;
+	border-bottom: thin ridge black;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+p.review{
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Comic Sans MS", sans-serif;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+img.mePic{
+	margin-left: auto;
+	margin-right: auto;
+	width: 28%;
+	border: thin groove black;
+	background-color: black;
+	padding: 5px;
+}
+img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	border: 3px #778899;
+	border-style: ridge groove;
+	border-radius: 15px;
+	padding: 0px;
+}
+body{
+	background-image: url("images/textured_paper.png");
+	COLOR: black;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 2px outset #4682B4;
+	padding: 10px 10px 10px 10px;
+	font-family: "calibri", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.35em;
+}
+p.welcomeMessage{
+	font-size: 135%; 
+	font-family: "book antiqua", serif;
+	color: black;
+	font-style: italic, bold;
+	background-color: #A7cece;
+	padding: 15px;
+	margin-right: 50px;
+	margin-left: 50px;
+	border-style: ridge;
+	border-width: thin;
+	border-color: black;
+}
+p.homeLink{
+	text-align: right;
+}
+a,a:visited{
+	color: black;
+}
+a.recipeLink:hover, a.homeLink:hover{
+	background: #98FB98;
+}
