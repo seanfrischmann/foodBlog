@@ -1,12 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
 	{% if session.logged_in %}
-<!--
-		<form method="POST" enctype="multipart/form-data" action="{{ url_for('upload') }}">
-			<input type="file" name="photo">
-			<input type="submit" value="Share">
-		</form>-->
-		<form action="{{ url_for('add_entry') }}" method=post >
+		<form action="{{ url_for('add_dessert') }}" method=post >
 			<dl class="add-entry">
 				<dt class="add-entry">Title:
 				<dd><input type=text size=30 name=title>

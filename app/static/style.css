@@ -3,8 +3,14 @@ body{
 	font-family: sans-serif;
 	background-image: url("images/textured_paper.png");
 }
-a{
+#front{
+	text-align: center;
+}
+a,a:visited{
 	COLOR: #4682B4;
+}
+a:hover{
+	background: #98FB98;
 }
 h1, h2{
 	COLOR: #00BFFF;
@@ -18,6 +24,18 @@ h1{
 	font-family: fantasy;
 	text-align: center;
 	font-weight: normal;
+}
+p.welcomeMessage{
+	font-size: 105%; 
+	font-family: "book antiqua", serif;
+	color: black;
+	background-color: #A7cece;
+	padding: 15px;
+	margin-right: 50px;
+	margin-left: 50px;
+	border-style: ridge;
+	border-width: thin;
+	border-color: black;
 }
 
 .page{
@@ -35,8 +53,13 @@ h1{
 .entries .ing	{ list-style: circle; margin-left: 2.2em; }
 dl.add-entry    { font-size: 0.9em; border-bottom: 1px solid #ccc; }
 dt.add-entry    { font-weight: bold; padding: 0.8em; }
-.metanav        { text-align: right; t-size: 0.8em; padding: 0.3em;
-					margin-bottom: 1em; background: #fafafa; }
+.metanav{
+	text-align: right;
+	size: 0.8em;
+	padding: 0.3em;
+	margin-bottom: 1em;
+	background: #fafafa;
+}
 .flash          { background: #cee5F5; padding: 0.5em;
 					border: 1px solid #aacbe2; }
 .error          { background: #f0d6d6; padding: 0.5em; }

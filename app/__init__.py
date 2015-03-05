@@ -18,7 +18,6 @@ DEBUG = True
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
-UPLOADED_PHOTOS_DEST = 'app/static/images'
 
 #create app
 app = Flask(__name__)
@@ -45,7 +44,11 @@ def teardown_request(exception):
 		db.close()
 
 @app.route('/')
-def show_entries():
+def index():
+	return render_template('index.html')
+
+@app.route('/desserts')
+def show_desserts():
 	cur = g.db.execute('select title, ingredients, review from entries order by id desc')
 	entries = [dict(title=row[0], ingredients=row[1], review=row[2]) for row in cur.fetchall()]
 	i = 0
@@ -56,8 +59,9 @@ def show_entries():
 			temp = temp+' '+'<li class="ing">'+x
 		entries[i]['ingredients'] = temp
 		i += 1
-	return render_template('show_entries.html', entries=entries)
+	return render_template('show_desserts.html', entries=entries)
 
+'''
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
 	if request.method == 'POST' and 'photo' in request.files:
@@ -75,17 +79,17 @@ def show(id):
 		abort(404)
 	url = photos.url(photo.filename)
 	return render_template('show.html', url=url, photo=photo)
+'''
 
-@app.route('/add', methods=['POST'])
-def add_entry():
+@app.route('/add_dessert', methods=['POST'])
+def add_dessert():
 	if not session.get('logged_in'):
 		abort(401)
-	print (request.form['photo'])
 	g.db.execute('insert into entries (title, ingredients, review) values (?,?,?)', 
 			[request.form['title'], request.form['ingredients'], request.form['review']])
 	g.db.commit()
 	flash('New entry was successfully posted')
-	return redirect(url_for('show_entries'))
+	return redirect(url_for('show_desserts'))
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -98,7 +102,7 @@ def login():
 		else:
 			session['logged_in'] = True
 			flash('You were logged in')
-			return redirect(url_for('show_entries'))
+			return redirect(url_for('index'))
 	return render_template('login.html', error=error)
 
 @app.route('/logout')
