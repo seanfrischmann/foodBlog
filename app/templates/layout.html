@@ -2,6 +2,11 @@
 <title>Food Blog</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
+	{% if not request.path == '/' %}
+	<div id="homeLink">
+		<a href="{{ url_for('index') }}">Return Home</a>
+	</div>
+	{% endif %}
 	<h1>Welcome to Sean's Food Blog</h1>
 	<div class=metanav>
 		{% if not session.logged_in %}

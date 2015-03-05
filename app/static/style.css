@@ -6,13 +6,12 @@ body{
 #front{
 	text-align: center;
 }
-a,a:visited{
-	COLOR: #4682B4;
+#homeLink{
 }
 a:hover{
 	background: #98FB98;
 }
-h1, h2{
+h1, h2, a,a:visited{
 	COLOR: #00BFFF;
 }
 h2{ 
@@ -29,10 +28,10 @@ p.welcomeMessage{
 	font-size: 105%; 
 	font-family: "book antiqua", serif;
 	color: black;
-	background-color: #A7cece;
+	background-color: #FFDead;
 	padding: 15px;
-	margin-right: 50px;
-	margin-left: 50px;
+	margin-right: 20px;
+	margin-left: 20px;
 	border-style: ridge;
 	border-width: thin;
 	border-color: black;
@@ -58,7 +57,7 @@ dt.add-entry    { font-weight: bold; padding: 0.8em; }
 	size: 0.8em;
 	padding: 0.3em;
 	margin-bottom: 1em;
-	background: #fafafa;
+	/*background: #fafafa;*/
 }
 .flash          { background: #cee5F5; padding: 0.5em;
 					border: 1px solid #aacbe2; }
