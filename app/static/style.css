@@ -6,12 +6,18 @@ body{
 #front{
 	text-align: center;
 }
-#homeLink{
+#home{
+	text-align: right;
+	float: right;
 }
 a:hover{
-	background: #98FB98;
+	background: black;
 }
-h1, h2, a,a:visited{
+h2,a,a:visited{
+	COLOR: #FFDead;
+}
+
+h1, h4,a.home{
 	COLOR: #00BFFF;
 }
 h2{ 
@@ -53,11 +59,7 @@ p.welcomeMessage{
 dl.add-entry    { font-size: 0.9em; border-bottom: 1px solid #ccc; }
 dt.add-entry    { font-weight: bold; padding: 0.8em; }
 .metanav{
-	text-align: right;
-	size: 0.8em;
-	padding: 0.3em;
-	margin-bottom: 1em;
-	/*background: #fafafa;*/
+	text-align: center;
 }
 .flash          { background: #cee5F5; padding: 0.5em;
 					border: 1px solid #aacbe2; }

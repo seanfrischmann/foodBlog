@@ -3,18 +3,20 @@
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
 	{% if not request.path == '/' %}
-	<div id="homeLink">
+	<div id="home">
 		<a href="{{ url_for('index') }}">Return Home</a>
 	</div>
 	{% endif %}
+	{% if not session.logged_in %}
+	<a href="{{ url_for('login') }}">log in</a>
+	{% else %}
+	<a href="{{ url_for('logout') }}">log out</a>
+	{% endif %}
+	{% if request.path == '/' %}
 	<h1>Welcome to Sean's Food Blog</h1>
-	<div class=metanav>
-		{% if not session.logged_in %}
-		<a href="{{ url_for('login') }}">log in</a>
-		{% else %}
-		<a href="{{ url_for('logout') }}">log out</a>
-		{% endif %}
-	</div>
+	{% elif request.path == '/desserts' %}
+	<h1>Homemade Desserts</h1>
+	{% endif %}
 	{% for message in get_flashed_messages() %}
 	<div class=flash>{{ message }}</div>
 	{% endfor %}
